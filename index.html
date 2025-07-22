@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        @font-face {
+            font-family: rubik;
+        src: url('Rubik-VariableFont_wght.woff2') format('woff2'),
+         url('Rubik-VariableFont_wght.woff') format('woff'),
+         url('Rubik-VariableFont_wght.ttf') format('truetype');
+        }
+
+
+        body{
+            font-family: "rubik";
+        }
+
+
+        header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 30px 80px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  flex-wrap: wrap;
+}
+
+.imageicon {
+  width: 120px;
+  height: auto;
+}
+
+/* NAV y UL */
+.nav-main {
+  flex-grow: 1;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.nav-links li {
+  display: flex;
+  align-items: center;
+}
+
+/* Enlaces */
+.nav-links a {
+  text-decoration: none;
+  color: #000;
+  font-size: 35px;
+  font-weight: 500;
+  padding: 8px 12px;
+}
+
+/* Botón ¡Inscríbete! */
+.btn-inscribete {
+  font-size: 26px;
+  border-radius: 50px;
+  border: none;
+  padding: 12px 24px;
+  background-color: #3061ff;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-inscribete:hover {
+  background-color: #284fce;
+}
+
+/* HAMBURGUESA */
+
+.menu-container {
+  position: relative;
+  z-index: 1100;
+}
+
+/* Oculta el checkbox */
+#menu-toggle {
+  display: none;
+}
+
+/* Fondo oscuro (overlay) */
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 900;
+  cursor: pointer;
+}
+
+/* Mostrar overlay solo cuando el menú está activo */
+#menu-toggle:checked + .menu-overlay {
+  display: block;
+}
+
+/* Icono hamburguesa */
+.menu-icon {
+  width: 50px;
+  height: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  z-index: 1101;
+}
+
+.menu-icon span {
+  height: 4px;
+  background-color: #333;
+  border-radius: 25px;
+  display: block;
+}
+
+/* MENÚ LATERAL */
+
+.menu {
+  border-radius: 20px 0 0 20px;
+  position: fixed;
+  top: 0;
+  right: -420px;
+  width: 420px;
+  height: 100vh;
+  background-color: #ffffff;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+  padding: 60px 20px;
+  box-sizing: border-box;
+  transition: right 0.3s ease;
+  z-index: 1000;
+}
+
+#menu-toggle:checked + .menu-overlay + .menu-icon + .menu {
+  right: 0;
+}
+
+/* Enlaces del menú */
+.menu a {
+    position: relative;
+    top: 10px;
+  display: block;
+  padding: 10px 0;
+  text-decoration: none;
+  color: #333;
+  font-size: 30px;
+  font-weight:bold;
+  /*border-bottom: 1px solid #ccc;*/
+}
+
+.menu a:hover {
+  background-color: #ddd;
+}
+
+.menu img{
+  position: absolute;
+  top: -100px;   /* ajusta a gusto */
+  left: 15px;  /* ajusta a gusto */
+  width: 350px; /* o el tamaño deseado */
+  height: auto;
+  pointer-events: auto;
+}
+
+.menu button{
+    position: relative;
+    top: 20px;
+    left: 55px;
+    font-size: 16px;
+  border-radius: 15px;
+  border: none;
+  padding: 12px 80px;
+  background-color: #3061ff;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.ImgUser img { 
+    position: relative;
+    left: -10px;
+    top: 80px;
+    width: 100px;
+}
+.ImgUser a{
+    display: block;
+    display: relative;
+    left: 100px;
+    top: -10px;
+    width: 100px;
+    font-size: 20px;
+    padding: -10px 0;
+}
+
+
+.contenedor-cajas {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+  gap: 10px;
+  flex-wrap: wrap;
+  
+}
+
+.caja {
+  background-color: #f5f5f5;
+  padding: 35px;
+  border-radius: 10px;
+  text-align: center;
+  width: 350px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.caja img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.caja p {
+    margin-top: auto;
+  font-size: 14px;
+  color: #333;
+  
+}
+.caja button{
+    border-radius: 50px;
+    margin-bottom: 30px;
+    border: none;
+    padding: 15px 62px;
+    background-color: #3061ff;
+
+}
+
+.caja button:hover{
+
+    background-color: #284fce; /* Green */
+  color: white;
+}
+
+h1{text-align: center;}
+
+
+footer {
+    position: relative;
+    background-color: #000000;
+    padding: 100px 60px 60px 60px; /* Más padding arriba para la imagen flotante */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    color: white; /* Para que el texto se vea en negro */
+    box-sizing: border-box; /* para que el padding no afecte ancho */
+}
+
+footer img {
+    position: absolute;
+    top: -70px; /* o top: -50px; si quieres que sobresalga un poco */
+    left: 50%;
+    transform: translateX(-50%); /* centra horizontalmente */
+    width: 250px;
+    height: auto;
+    pointer-events: auto;
+}
+
+footer p {
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+.diferent{
+    color: #3061ff;
+}
+
+h1{
+    font-size: 40px;
+}
+
+.imageicon {
+  position: absolute;
+  top: -70px;   /* ajusta a gusto */
+  left: 10px;  /* ajusta a gusto */
+  width: 250px; /* o el tamaño deseado */
+  height: auto;
+  pointer-events: auto;
+}
+
+.img_incio {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 30px;
+    width: 100%; /* Ocupa todo el ancho disponible */
+    max-width: none; /* Sin límite máximo */
+    height: auto;
+    min-height: 300px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .img_incio {
+        width: 95%; /* Slightly more width on smaller screens */
+        margin-top: 15px;
+        margin-bottom: 15px;
+        min-height: 200px; /* Adjust minimum height for smaller screens */
+    }
+}
+
+/* Media query for very small screens (e.g., mobile phones) */
+@media (max-width: 480px) {
+    .img_incio {
+        border-radius: 10px; /* Slightly less rounded corners */
+        min-height: 150px; /* Further adjust minimum height */
+    }
+}
+    </style>
+</head>
+<body>
+<header>
+  <img class="imageicon" src="/Logo Final.png" alt="Logo Img" />
+
+  <nav class="nav-main">
+    <ul class="nav-links">
+      <li><a href="#">Sedes</a></li>
+      <li><a href="#">Promociones</a></li>
+      <li><a href="#">Quienes somos</a></li>
+      <li><button class="btn-inscribete">¡Inscríbete!</button></li>
+      <li>
+        <div class="menu-container">
+          <input type="checkbox" id="menu-toggle" />
+          <!-- Fondo oscuro -->
+          <label class="menu-overlay" for="menu-toggle"></label>
+          <label class="menu-icon" for="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <div class="menu">
+            <img src="/Logo Final.png" alt="">
+
+                <div class="ImgUser">
+                <img src="/Usuario.png" alt="User">
+                <a id="User"href="User">usuarios</a>
+                <a id="number" href="number">1.152.224.905</a>
+                </div>
+            
+            <a href="#">Sedes</a>
+            <a href="#">Promociones</a>
+            <a href="#">Quienes Somos</a>
+            <button>¡Inscríbete!</button>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+
+        <img class ="img_incio"src="/Imagen incio.png" alt="Image Incio">
+
+
+
+        <H1>Elegir Planes y <span class="diferent">Entra ¡YA!</span></H1>
+    <div class="contenedor-cajas">
+  <div class="caja">
+    <h1>Mundo</h1>
+    <img src="/IMAGEN2 GYM.jpg" alt="Imagen 1">
+    <button> ¡Inscribete! </button>
+    <p>El objetivo es crear cuatro cajas 200x200px y situarlas en diferentes lugares de la página: el centro, a los lados, arriba, abajo...para así trabajar un poco con las cajas como tal y ver cómo interactúan entre sí. No quiero poner texto dentro ni nada más que ver cómo son y cómo funcionan.</p>
+  </div>
+
+  <div class="caja">
+    <h1>Mundo</h1>
+    <img src="/IMAGEN4 GYM.jpg" alt="Imagen 2">
+    <button> ¡Inscribete! </button>
+    <p>El objetivo es crear cuatro cajas 200x200px y situarlas en diferentes lugares de la página: el centro, a los lados, arriba, abajo...para así trabajar un poco con las cajas como tal y ver cómo interactúan entre sí. No quiero poner texto dentro ni nada más que ver cómo son y cómo funcionan.</p>
+  </div>
+
+  <div class="caja">
+    <h1>Mundo</h1>
+    <img src="/imaGEN7 GYM.jpg" alt="Imagen 3">
+    <button> ¡Inscribete! </button>
+    <p>El objetivo es crear cuatro cajas 200x200px y situarlas en diferentes lugares de la página: el centro, a los lados, arriba, abajo...para así trabajar un poco con las cajas como tal y ver cómo interactúan entre sí. No quiero poner texto dentro ni nada más que ver cómo son y cómo funcionan.</p>
+  </div>
+</div>
+
+<footer>
+    <img src="/Logo Final invertido.png" alt="">
+    <p>Siguenos</p>
+
+
+
+
+
+</footer>
+
+</body>
+</html>
