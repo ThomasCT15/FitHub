@@ -25,9 +25,9 @@
             <!-- Fondo oscuro -->
             <label class="menu-overlay" for="menu-toggle"></label>
             <label class="menu-icon" for="menu-toggle">
-              <span></span>
-              <span></span>
-              <span></span>
+              <span class="bar1"></span>
+              <span class="bar2"></span>
+              <span class="bar3"></span>
             </label>
             <div class="menu">
               <img src="/img/logos/Logo Final.png" alt="">
@@ -120,7 +120,53 @@
 
 
 
-  </footer>
+
+  <script>
+    // Animación hamburguesa a X y menú deslizante
+    const menuToggle = document.getElementById('menu-toggle');
+    const menuIcon = document.querySelector('.menu-icon');
+    const menu = document.querySelector('.menu');
+
+    menuToggle.addEventListener('change', function() {
+      if (this.checked) {
+        menuIcon.classList.add('open');
+        menu.classList.add('slide-in');
+      } else {
+        menuIcon.classList.remove('open');
+        menu.classList.remove('slide-in');
+      }
+    });
+  </script>
+
+
+<style>
+/* Animación icono hamburguesa a X */
+.menu-icon {
+  transition: transform 0.3s;
+}
+.menu-icon span {
+  display: block;
+  transition: 0.3s;
+}
+.menu-icon.open .bar1 {
+  transform: rotate(45deg) translate(8px, 8px);
+  background: #3061ff;
+}
+.menu-icon.open .bar2 {
+  opacity: 0;
+}
+.menu-icon.open .bar3 {
+  transform: rotate(-45deg) translate(8px, -8px);
+  background: #3061ff;
+}
+/* Animación menú lateral */
+.menu {
+  transition: right 0.4s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+.menu.slide-in {
+  right: 0 !important;
+}
+</style>
 
 </body>
 
