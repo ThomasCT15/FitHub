@@ -414,6 +414,33 @@ h1{
 }
 
 
+/* Animación icono hamburguesa a X */
+.menu-icon {
+  transition: transform 0.3s;
+}
+.menu-icon span {
+  display: block;
+  transition: 0.3s;
+}
+.menu-icon.open .bar1 {
+  transform: rotate(45deg) translate(8px, 8px);
+  background: #3061ff;
+}
+.menu-icon.open .bar2 {
+  opacity: 0;
+}
+.menu-icon.open .bar3 {
+  transform: rotate(-45deg) translate(8px, -8px);
+  background: #3061ff;
+}
+/* Animación menú lateral */
+.menu {
+  transition: right 0.4s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+.menu.slide-in {
+  right: 0 !important;
+}
+
 /* Media query for smaller screens */
 @media (max-width: 768px) {
     .img_incio {
