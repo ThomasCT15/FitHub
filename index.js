@@ -12,3 +12,7 @@
         menu.classList.remove('slide-in');
       }
     });
+  // function closeMenu() {
+  //   // Cambia el estado del checkbox a desmarcado
+  //   document.getElementById("menu-toggle").checked = false;
+  // }
