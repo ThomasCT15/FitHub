@@ -406,6 +406,67 @@ color:#3061ff ;
 
 
 
+/* estructura principal: header arriba, main centrado, footer abajo */
+body {
+  display: flex;
+  flex-direction: column; /* importante: columna para que header vaya arriba */
+  min-height: 100vh;
+  margin: 0;
+  font-family: "rubik", sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* el main ocupa el espacio disponible y centra su contenido */
+main.centro {
+  flex: 1; /* toma todo el espacio sobrante entre header y footer */
+  display: flex;
+  align-items: center;    /* centra verticalmente */
+  justify-content: center;/* centra horizontalmente */
+  padding: 20px;          /* opcional */
+}
+
+/* tu caja de login (sin cambios importantes) */
+.login-container {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  width: 320px; /* puedes ajustar */
+}
+
+/* si quieres centrar elementos dentro de login (ej: un icono) */
+.login-container.centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* inputs y botones (tus reglas existentes) */
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.btn-ingresar {
+  width: 100%;
+  background-color: #3061ff;
+  color: white;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.olvidar {
+  display:block;
+  text-align:right;
+  font-size:12px;
+  margin-top:8px;
+  color:#3061ff;
+  text-decoration:none;
+}
 
 
 
