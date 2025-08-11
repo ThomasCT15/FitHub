@@ -3,7 +3,7 @@
 //////////////////////////////////////////////////////////////// 🗿 Header Start 🗿 ///////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
         
-        @font-face {
+/*         @font-face {
             font-family: rubik;
         src: url('Rubik-VariableFont_wght.woff2') format('woff2'),
          url('Rubik-VariableFont_wght.woff') format('woff'),
@@ -14,7 +14,17 @@
         body{
             font-family: "rubik";
         }
+ */
 
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Rubik";
+  text-decoration: none;
+}
 
   header {
   display: flex;
@@ -400,61 +410,73 @@ color:#3061ff ;
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 */
 
+main {
+  height: 80vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+/*   background-color: lightgray; */
+  flex-direction: column;
+  box-sizing: border-box;
+  .imgqs {
+  height: 100%;
+  width: 98%;
+  margin-top: 30px;
+  border-radius: 40px;
+  box-shadow: -8px 0 10px;
+  }
+}
 
+.description {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-top: 3%;
+}
 
+.card {
+  width: 100%;
+  height: 90vh;
+  display: inline-block;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
 
+.logosqs {
+  width: 15%;
+  height: 12%;
+  margin-left: 20%;
+}
 
+.check {
+  opacity: 0.5;
+  border: 3px solid rgb(0, 0, 0, 0.3);
+  border-radius: 50%;
+  padding: 15px;
+}
 
+.map {
+  opacity: 0.5;
+}
 
+.title_card {
+  margin-top: 10%;
+  margin-left: 20%;
+  font-size: 30px;
+  font-weight: 400;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.card p {
+  text-align: left;
+  padding: 20px;
+  padding-left: 90px;
+  font-size: 20px;
+  font-weight: 100;
+}
 
 /* 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
