@@ -418,8 +418,8 @@ body {
         }
         h2 {
             font-size: 18px;
-            font-weight: bold;
-            margin-bottom: 10px;
+            font-weight: 500;
+            margin-bottom: 20px;
         }
         input, select {
             width: 100%;
