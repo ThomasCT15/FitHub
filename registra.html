@@ -49,7 +49,44 @@
       </ul>
     </nav>
   </header>
-<!-- ///////////////////////////////////////////////////Content///////////////////////////////////////////////////
+<!-- ///////////////////////////////////////////////////Content///////////////////////////////////////////////////-->
+
+
+<form>
+    <h2>CREAR CUENTA</h2>
+    <input type="text" placeholder="NOMBRE" required>
+    <input type="text" placeholder="APELLIDO" required>
+    <input type="date" placeholder="FECHA DE NACIMIENTO" required>
+
+    <div style="display: flex; gap: 5px;">
+        <select required>
+            <option value="">TIPO</option>
+            <option value="CC">Cédula</option>
+            <option value="TI">Tarjeta de Identidad</option>
+            <option value="PP">Pasaporte</option>
+        </select>
+        <input type="text" placeholder="N° DOCUMENTO" required>
+    </div>
+
+    <input type="tel" placeholder="TELÉFONO MÓVIL" required>
+
+    <select required>
+        <option value="">CIUDAD</option>
+        <option>Bogotá</option>
+        <option>Medellín</option>
+        <option>Cali</option>
+    </select>
+
+    <input type="text" placeholder="DIRECCIÓN" required>
+    <input type="email" placeholder="CORREO ELECTRÓNICO" required>
+    <input type="password" placeholder="CONTRASEÑA" required>
+
+    <div class="terms">
+        <label for=""><input type="checkbox" required><p>Al seleccionar esta casilla acepto los <a href="#">términos y condiciones</a> y <a href="#">políticas de tratamiento de datos</a></p>.</label>
+    </div>
+
+    <button type="submit" class="pr">¡Inscríbete ya!</button>
+</form>
 
 
 
@@ -67,10 +104,7 @@
 
 
 
-
-
-
-///////////////////////////////////////////////////Content/////////////////////////////////////////////////// -->
+<!-- ///////////////////////////////////////////////////Content/////////////////////////////////////////////////// -->
   <footer>
     <img class="logo-principal"src="/img/logos/Logo Final invertido.png" alt="">
     <hr class="linea">

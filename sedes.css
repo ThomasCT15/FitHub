@@ -414,6 +414,8 @@ color:#3061ff ;
   background-color: white;
   width: 300px;
   text-align: center;
+  margin-bottom: 50px;
+  margin-top: 50px; /* Espacio entre tarjetas */
 }
 
 .caja img {
