@@ -211,6 +211,18 @@ color:#3061ff ;
   cursor: pointer;
 }
 
+/* Estilo para la X de cerrar */
+.menu .close-button {
+  position: absolute;
+  top: 30px;
+  left: 360px;
+  font-size: 2em;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: #3061ff;
+}
+
 /* .menu button:hover: Cambia el color del botón al pasar el mouse. */
 .menu button:hover {
    background-color: #284fce; /* Green */
@@ -237,6 +249,34 @@ color:#3061ff ;
     font-size: 20px;
     padding: -10px 0;
 }
+
+/* Animación icono hamburguesa a X */
+.menu-icon {
+  transition: transform 0.3s;
+}
+.menu-icon span {
+  display: block;
+  transition: 0.3s;
+}
+.menu-icon.open .bar1 {
+  transform: rotate(45deg) translate(8px, 8px);
+  background: #3061ff;
+}
+.menu-icon.open .bar2 {
+  opacity: 0;
+}
+.menu-icon.open .bar3 {
+  transform: rotate(-45deg) translate(8px, -8px);
+  background: #3061ff;
+}
+/* Animación menú lateral */
+.menu {
+  transition: right 0.4s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+.menu.slide-in {
+  right: 0 !important;
+}
+
 
 /* .contenedor-cajas: Contenedor flexible para agrupar varias cajas (tarjetas). */
 .contenedor-cajas {
