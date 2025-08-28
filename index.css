@@ -64,9 +64,9 @@
 .nav-links a {
   text-decoration: none;
   color: #000;
-  font-size: 35px;
+  font-size: 30px;
   font-weight: 450;
-  padding: 8px 35px;
+  padding: 8px 45px;
 }
 
 /* .Pet1: Aplica color a un enlace específico de la navegación. */
@@ -429,13 +429,14 @@ color:#3061ff ;
 .caja h3 {
   align-self: left;
   margin-bottom: 10px;
+  font-size: 30px;
 }
 
 /* .caja p: Estilo para el texto de la tarjeta. */
 .caja p {
   align-self: left;
   margin: 15px 95;
-  font-size: 14px;
+  font-size: 20px;
   color: #222;
 }
 
@@ -478,7 +479,7 @@ color:#3061ff ;
 .opciones label {
      margin:10px 0;
      font-weight: 700;
-  font-size: 10px;
+  font-size: 15px;
   color: #444;
   display: flex;
   align-items: center;
