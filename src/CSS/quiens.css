@@ -508,11 +508,7 @@ footer .logo-principal {
   pointer-events: auto;
 }
 footer p {
-<<<<<<< HEAD:src/CSS/quiens.css
     margin-top: 20px;
-=======
-    margin-top: 15px;
->>>>>>> ed18a0a06eaac13b226ac736bc087ac3ba75250c:quiens.css
     font-size: 1.2rem;
 }
 
@@ -525,12 +521,7 @@ footer .linea {
 
 
 footer .social-icons {
-<<<<<<< HEAD:src/CSS/quiens.css
   margin: 30px 0;
-=======
-  margin: 5px 0;
-  margin-top: 30px;
->>>>>>> ed18a0a06eaac13b226ac736bc087ac3ba75250c:quiens.css
 }
 
 footer .social-icons a {
