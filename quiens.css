@@ -508,7 +508,7 @@ footer .logo-principal {
   pointer-events: auto;
 }
 footer p {
-    margin-top: 10px;
+    margin-top: 15px;
     font-size: 1.2rem;
 }
 
@@ -522,6 +522,7 @@ footer .linea {
 
 footer .social-icons {
   margin: 5px 0;
+  margin-top: 30px;
 }
 
 footer .social-icons a {
