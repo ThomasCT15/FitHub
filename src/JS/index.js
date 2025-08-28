@@ -12,3 +12,44 @@
         menu.classList.remove('slide-in');
       }
     });
+
+  //   const videos = [
+  //   '/148210-793717953_tiny.mp4',
+  //   '/148208-793717949_tiny.mp4',
+  //   '/135160-761273559_tiny.mp4'
+  // ];
+
+  // let currentIndex = 0;
+  // const videoPlayer = document.getElementById('videoPlayer');
+
+  // function changeVideo() {
+  //   // Empieza la transición (se desvanece)
+  //   videoPlayer.style.opacity = 0;
+
+  //   setTimeout(() => {
+  //     currentIndex = (currentIndex + 1) % videos.length;
+
+  //     // Cambia el source
+  //     videoPlayer.querySelector('source').src = videos[currentIndex];
+  //     videoPlayer.load();
+  //     videoPlayer.play();
+
+  //     // Vuelve a aparecer suavemente
+  //     videoPlayer.style.opacity = 1;
+  //   }, 1000); // Espera 1s para hacer el cambio (coincide con el transition)
+  // }
+
+  // // Cambia de video cada 12 segundos (ajusta según duración real de tus videos)
+  // setInterval(changeVideo, 6000);
+
+
+  function openFullscreen(card) {
+    const video = card.querySelector('video');
+    if (video.requestFullscreen) {
+      video.requestFullscreen();
+    } else if (video.webkitRequestFullscreen) {
+      video.webkitRequestFullscreen(); // Safari
+    } else if (video.msRequestFullscreen) {
+      video.msRequestFullscreen(); // IE/Edge
+    }
+  }
