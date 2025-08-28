@@ -3,7 +3,7 @@
 //////////////////////////////////////////////////////////////// 🗿 Header Start 🗿 ///////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
         
-        @font-face {
+/*         @font-face {
             font-family: rubik;
         src: url('Rubik-VariableFont_wght.woff2') format('woff2'),
          url('Rubik-VariableFont_wght.woff') format('woff'),
@@ -11,16 +11,20 @@
         }
 
 
-       /* estructura principal: header arriba, main centrado, footer abajo */
-body {
-  display: flex;
-  flex-direction: column; /* importante: columna para que header vaya arriba */
-  min-height: 100vh;
-  margin: 0;
-  font-family: "rubik", sans-serif;
-  background-color: #ffffff;
-}
+        body{
+            font-family: "rubik";
+        }
+ */
 
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Rubik";
+  text-decoration: none;
+}
 
   header {
   display: flex;
@@ -406,136 +410,73 @@ color:#3061ff ;
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 */
 
-
-
-
-
-
-
-
-
-/* el main ocupa el espacio disponible y centra su contenido */
-main.centro {
-  flex: 1; /* toma todo el espacio sobrante entre header y footer */
+main {
+  height: 80vh;
+  width: 100%;
+  position: relative;
   display: flex;
-  align-items: center;    /* centra verticalmente */
-  justify-content: center;/* centra horizontalmente */
-  padding: 20px;          /* opcional */
-  
-}
-
-h2{
- font-size: 50px;
- margin-top: 200px;
-}
-/* tu caja de login (sin cambios importantes) */
-.login-container {
-  width: 800px;
-  
-}
-
-/* si quieres centrar elementos dentro de login (ej: un icono) */
-.login-container.centered {
-  display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+/*   background-color: lightgray; */
+  flex-direction: column;
+  box-sizing: border-box;
+  .imgqs {
+  height: 100%;
+  width: 98%;
+  margin-top: 30px;
+  border-radius: 40px;
+  box-shadow: -8px 0 10px;
+  }
 }
 
-.ema{
-margin-top: 100px;
-}
-
-.pas{
-
-}
-
-/* inputs y botones (tus reglas existentes) */
-input {
+.description {
   width: 100%;
-  padding: 10px;
-  margin: 8px 0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  height: 80vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-top: 3%;
 }
-.btn-ingresar {
-  margin-top: 100px;
+
+.card {
   width: 100%;
-  background-color: #3061ff;
-  color: white;
-  border: none;
-  padding: 12px;
-  cursor: pointer;
-  border-radius: 5px;
-  font-size: 16px;
-}
-.olvidar {
-  display:block;
-  text-align:right;
-  font-size:12px;
-  margin-top:20px;
-  color:#e79a01;
-  
+  height: 90vh;
+  display: inline-block;
+  justify-content: space-evenly;
+  flex-direction: row;
 }
 
-.ol{
-  margin-top: 80px;
-  display:block;
-  text-align:center;
-  font-size:12px;
-  color:#000000;
-  margin-bottom: 100px;
-  text-decoration: none;
-  font-size: 15px;
+.logosqs {
+  width: 15%;
+  height: 12%;
+  margin-left: 20%;
 }
 
+.check {
+  opacity: 0.5;
+  border: 3px solid rgb(0, 0, 0, 0.3);
+  border-radius: 50%;
+  padding: 15px;
+}
 
+.map {
+  opacity: 0.5;
+}
 
+.title_card {
+  margin-top: 10%;
+  margin-left: 20%;
+  font-size: 30px;
+  font-weight: 400;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.card p {
+  text-align: left;
+  padding: 20px;
+  padding-left: 90px;
+  font-size: 20px;
+  font-weight: 100;
+}
 
 /* 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -567,20 +508,29 @@ footer .logo-principal {
   pointer-events: auto;
 }
 footer p {
-    margin-top: 10px;
+<<<<<<< HEAD:src/CSS/quiens.css
+    margin-top: 20px;
+=======
+    margin-top: 15px;
+>>>>>>> ed18a0a06eaac13b226ac736bc087ac3ba75250c:quiens.css
     font-size: 1.2rem;
 }
 
 footer .linea {
   border: none;
   border-top: 2px solid white;
-  margin: 5px auto;
+  margin: 10px auto;
   width: 30%;
 }
 
 
 footer .social-icons {
+<<<<<<< HEAD:src/CSS/quiens.css
+  margin: 30px 0;
+=======
   margin: 5px 0;
+  margin-top: 30px;
+>>>>>>> ed18a0a06eaac13b226ac736bc087ac3ba75250c:quiens.css
 }
 
 footer .social-icons a {
@@ -588,6 +538,11 @@ footer .social-icons a {
   margin: 0 10px;
   font-size: 24px;
   text-decoration: none;
+}
+
+footer .icons:hover {
+  translate: 0 -10px;
+  transition: ease-in-out 0.3s;
 }
 
 footer .social-icons a:hover {
