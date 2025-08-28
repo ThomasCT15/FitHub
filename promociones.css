@@ -479,6 +479,40 @@ h1{
   right: 0 !important;
 }
 
+.bo{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  padding:  20px;
+  gap: 50px;/*separa las tarjetas*/
+  button{
+    position: relative;
+    text-align: center;
+    width: 200px;
+  }
+  p{
+    text-align: center;          /* Centra el texto */
+    white-space: normal;         /* Permite saltos de línea normales */
+    word-break: break-word;      /* Rompe palabras largas si no caben */
+    overflow-wrap: break-word;   /* Asegura que no se desborde */
+    padding: 0 10px;             /* Espacio lateral para que no choque con los bordes */
+    
+  }
+  h3{
+    text-align: center;
+  }
+}
+
+.img-responsive{
+  height: 200px;
+  width: 300px;
+  border-radius: 20px;
+  position: relative;
+  right: 25px;
+  top: -20px;
+
+}
+
 .po{
     background-color: #3061ff;
    height: 100px;
@@ -513,81 +547,3 @@ h2{
     font-family: rubik, sans-serif;
 }
 
-.ut{
-    height: 130px;
-    width: 500px;
-    border-radius: 20px;
-}
-
-.lo{
-    display: flex;
-    margin-left: 550px;
-    position: relative;
-    top: -135px;
-    font-size: 16px;
-    line-height: 0.5;
-}
-
-.ño{
-    position: relative;
-    top: -130px;
-    margin-left: 550px;
-    background-color: #3061ff;
-    color: black;
-    height: 35px;
-    width: 150px;
-    border-radius: 15px;
-    font-size: 16px;
-    cursor: pointer ;
-}
-
-.ño:hover{
-  color: white;
-  background-color: #284fce;
-}
-
-
-.tu{
-    height: 130px;
-    width: 500px;
-    border-radius: 20px;
-}
-
-.la{
-    display: flex;
-    margin-left: 550px;
-    position: relative;
-    top: -135px;
-    font-size: 16px;
-    line-height: 0.5;
-}
-
-
-.ña{
-    position: relative;
-    top: -130px;
-    margin-left: 550px;
-    background-color: #3061ff;
-    color: black;
-    height: 35px;
-    width: 150px;
-    border-radius: 15px;
-    font-size: 16px;
-    cursor: pointer ;
-}
-
-.ña:hover{
-  color: white;
-  background-color: #284fce;
-}
-
-.re{
-  height: 150px;
-  width: 1250px;
-  margin-bottom: 50px;
-  margin-left: 110px;
-  padding-left: 20px;
-  padding-top: 20px;
-  border: 4px black solid;
-  border-radius: 20px;
-}
