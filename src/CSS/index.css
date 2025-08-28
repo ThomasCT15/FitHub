@@ -515,7 +515,7 @@ color:#3061ff ;
 .opciones input[type="checkbox"]:disabled {
   background-color: #3061ff; /* Color de fondo cuando está deshabilitado */
   border-color: #3061ff;     /* Borde azul cuando está deshabilitado */
-  cursor: url('/img/logos/Favicon_64x64.png'), not-allowed;      /* Cursor de no permitido */
+  cursor: url('/src/VIEWS/IMG/logos/Favicon_64x64.png'), not-allowed;      /* Cursor de no permitido */
 }
 
 
