@@ -3,13 +3,22 @@
 //////////////////////////////////////////////////////////////// 🗿 Header Start 🗿 ///////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
         
-        @font-face {
+        /* @font-face {
             font-family: rubik;
         src: url('Rubik-VariableFont_wght.woff2') format('woff2'),
          url('Rubik-VariableFont_wght.woff') format('woff'),
          url('Rubik-VariableFont_wght.ttf') format('truetype');
-        }
+        } */
 
+         @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Rubik";
+  text-decoration: none;
+}
 
        /* estructura principal: header arriba, main centrado, footer abajo */
 body {
@@ -443,10 +452,6 @@ h2{
 
 .ema{
 margin-top: 100px;
-}
-
-.pas{
-
 }
 
 /* inputs y botones (tus reglas existentes) */
