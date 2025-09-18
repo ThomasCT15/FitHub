@@ -3,7 +3,7 @@
 //////////////////////////////////////////////////////////////// 🗿 Header Start 🗿 ///////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
         
-        @font-face {
+        /* @font-face {
             font-family: rubik;
         src: url('Rubik-VariableFont_wght.woff2') format('woff2'),
          url('Rubik-VariableFont_wght.woff') format('woff'),
@@ -15,7 +15,16 @@
           
             font-family: "rubik";
         }
+ */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Rubik";
+  text-decoration: none;
+}
 
   header {
   display: flex;
@@ -401,14 +410,6 @@ color:#3061ff ;
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 */
 
-
-body {
-            /* font-family: Arial, sans-serif;
-            background-color: #fff;
-            display: flex;
-            justify-content: center;
-            padding: 20px; */
-        }
         form {
           margin-top: 100px;
           margin-bottom: 100px;
@@ -562,7 +563,7 @@ footer .linea {
 
 
 footer .social-icons {
-  margin: 5px 0;
+  margin: 30px 0;
 }
 
 footer .social-icons a {
@@ -572,8 +573,36 @@ footer .social-icons a {
   text-decoration: none;
 }
 
+footer .icons:hover {
+  translate: 0 -10px;
+  transition: ease-in-out 0.3s;
+}
+
 footer .social-icons a:hover {
   color: #00acee; /* Puedes cambiar el color al pasar el mouse */
+}
+
+footer .footer-links {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    max-width: 800px;
+}
+
+footer .footer-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+footer .footer-links a:hover {
+    color: #3061ff; /* Color al pasar el mouse */
+    text-decoration: underline;
 }
 
 /* 
