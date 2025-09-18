@@ -604,6 +604,29 @@ footer .social-icons a:hover {
   color: #00acee; /* Puedes cambiar el color al pasar el mouse */
 }
 
+footer .footer-links {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    max-width: 800px;
+}
+
+footer .footer-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+footer .footer-links a:hover {
+    color: #3061ff; /* Color al pasar el mouse */
+    text-decoration: underline;
+}
+
 /* 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////🔧 End Of Footer🔧 ///////////////////////////////////////////
