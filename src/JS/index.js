@@ -53,3 +53,39 @@
       video.msRequestFullscreen(); // IE/Edge
     }
   }
+ const slides = document.querySelector('.carousel-holder');
+  const totalSlides = document.querySelectorAll('.slide').length;
+  let index = 0;
+
+  // --- Función para mover el carrusel ---
+  function showSlide(i) {
+    slides.style.transform = `translateX(-${i * 100}%)`;
+  }
+
+  // --- Flechas manuales ---
+  document.querySelector('.arrow.left').addEventListener('click', () => {
+    index = (index - 1 + totalSlides) % totalSlides;
+    showSlide(index);
+    resetAutoSlide();
+  });
+
+  document.querySelector('.arrow.right').addEventListener('click', () => {
+    index = (index + 1) % totalSlides;
+    showSlide(index);
+    resetAutoSlide();
+  });
+
+  // --- Movimiento automático ---
+  let autoSlide = setInterval(() => {
+    index = (index + 1) % totalSlides;
+    showSlide(index);
+  }, 4000); // cambia cada 4 segundos
+
+  // --- Si el usuario usa las flechas, se reinicia el temporizador ---
+  function resetAutoSlide() {
+    clearInterval(autoSlide);
+    autoSlide = setInterval(() => {
+      index = (index + 1) % totalSlides;
+      showSlide(index);
+    }, 4000);
+  }
