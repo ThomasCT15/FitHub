@@ -467,7 +467,7 @@ color:#3061ff ;
 /* Botón */
 .caja button {
   background-color: #3061ff;
-  color: white;
+  color: black;
   font-family: 'Rubik', sans-serif;
   font-weight: 500;
   font-size: 18px;
@@ -482,6 +482,7 @@ color:#3061ff ;
 
 .caja button:hover {
   background-color: #284fce;
+  color: white;
   transform: scale(1.05);
 }
 
