@@ -111,6 +111,7 @@ body {
 /* .btn-inscribete:hover: Cambia el color de fondo del botón al pasar el mouse. */
 .btn-inscribete:hover {
   background-color: #284fce;
+  color: white;
 }
 
 
@@ -466,13 +467,19 @@ input {
   margin-top: 100px;
   width: 100%;
   background-color: #3061ff;
-  color: white;
+  color: rgb(0, 0, 0);
   border: none;
   padding: 12px;
   cursor: pointer;
   border-radius: 5px;
   font-size: 16px;
 }
+
+.btn-ingresar:hover {
+  background-color: #284fce;
+  color: white;
+}
+
 .olvidar {
   display:block;
   text-align:right;

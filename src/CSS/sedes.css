@@ -105,6 +105,7 @@
 /* .btn-inscribete:hover: Cambia el color de fondo del botón al pasar el mouse. */
 .btn-inscribete:hover {
   background-color: #284fce;
+  color: white;
 }
 
 
@@ -468,7 +469,10 @@ color:#3061ff ;
   background-color: #0066ff;
   color: black;
 }
-
+.caja a:hover {
+  background-color: #284fce;
+  color: white;
+}
 
 
 
